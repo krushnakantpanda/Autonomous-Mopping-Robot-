@@ -1,0 +1,25 @@
+Item,Qty,Specification / example,Notes
+Arduino Uno R3,1,ATmega328P 5 V board,Do not run pump or motors from GPIO
+TB6612FNG dual motor driver carrier,1,VM suitable for 6 V motor rail,Confirm carrier pin labels and current/thermal ratings
+DC geared motors,2,6 V gear motors with wheels,Choose low-speed gear ratio; motor current must suit driver
+Wheels,2,Matched to motor shaft,Similar diameter and traction
+Caster wheels or ball casters,2,Small swiveling casters,Front/rear supports; keep pad flat
+HC-SR04 ultrasonic module,1,5 V trigger/echo module,Front obstacle sensing; not a stair sensor
+SG90-class servo,1,5 V,Sensor pan bracket only
+Analog IR reflective/cliff sensor modules,2,5 V with analog output,Mount down-facing near front corners; calibrate each floor
+Normally-open bumper microswitches,2,Lever type,Wire each switch between input and GND
+Peristaltic mini pump,1,5 V,low-flow,Verify current draw and fluid compatibility before selecting
+Logic-level N-channel MOSFET,1,AO3400 module or equivalent,Gate threshold suitable for 5 V logic; pump switched on low side
+Flyback diode,1,Schottky or 1N5819,Across pump motor terminals; cathode to +5 V
+Protected 2S battery pack,1,7.4 V nominal,Protected pack with suitable discharge rating; secure mount
+Battery charger,1,Matched to pack chemistry and 2S configuration,Use only the correct charger; charge outside robot
+Main fuse and holder,1,Rating selected for measured load,Place close to battery positive
+Latching main switch,1,DC-rated,Accessible power cutoff; add emergency stop hardware
+Buck converter,1,2S input to regulated 6 V,3 A class for motor rail,Set/verify output before connecting driver VM
+Buck converter,1,2S input to regulated 5 V,3 A class for Uno logic and accessories,Power Uno via 5V pin only with USB disconnected
+Water reservoir,1,Sealed small tank with cap,Mount above/elevated away from electronics; inspect for leaks
+Tubing / flow restrictor,As needed,Compatible with pump and water,Route to pad; avoid siphoning and drips
+Microfiber mop pad,1,Removable and washable,Passive pad; secure to underside and keep clear of wheels
+Chassis plate,1,Approx 280 x 240 mm,Non-absorbent sheet material; seal edges where appropriate
+Standoffs / fasteners / cable ties,As needed,Insulating standoffs and hardware,Elevate electronics, strain-relief all wiring
+Wire and connectors,As needed,Motor wire plus fused power leads,Keep wet zone separated; size for current
